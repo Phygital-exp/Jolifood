@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutero JoliFood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://s3.amazonaws.com/botgen/Uploads/jolifood_1733768342.png" type="image/png">
+</head>
+<body>
+    <!-- Contenedor principal de búsqueda -->
+    <div class="search-container">
+        <h1>Búsqueda de PDV Jolifood</h1>
+        
+        <!-- Selección de región -->
+        <label for="regionSelect">Selecciona una región:</label>
+        <select id="regionSelect">
+            <option value="">Seleccionar Región</option>
+            <option value="SUR OCCIDENTE">SUR OCCIDENTE</option>
+            <option value="NOR OCCIDENTE">NOR OCCIDENTE</option>
+            <option value="CENTRO">CENTRO</option>
+            <option value="NORORIENTE">NORORIENTE</option>
+        </select>
+
+        <!-- Campo de entrada para buscar el nombre del PDV -->
+      <p>
+        <label for="searchInput">Ingresa palabra clave del PDV:</label>
+        <input type="text" id="searchInput" placeholder="Escribir..." required>
+
+        <!-- Botón de búsqueda -->
+        <div class="button-container">
+            <button onclick="search()">Buscar</button>
+        </div>
+
+        <!-- Contenedor para los resultados de búsqueda -->
+        <div id="results" aria-live="polite"></div>
+    </div>
+
+    <!-- Footer con logos y contacto -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="https://s3.amazonaws.com/botgen/Uploads/ppt_nueva_phygital-27_1720634176.png" alt="Logo PPT">
+            </div>
+            <div class="contact-info">
+                <p><b>Soporte: </b>Santiago Abadia</p>
+                <p><i class="material-icons">phone</i> +57 323 4576531</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
