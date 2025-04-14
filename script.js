@@ -14,7 +14,7 @@ async function search() {
         return;
     }
 
-    const url = 'https://jolifood-production.up.railway.app/api/jolifood/pdv'';
+    const url = 'https://jolifood-production.up.railway.app/api/jolifood/pdv';
 
     try {
         const response = await fetch(url);
