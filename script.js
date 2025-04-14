@@ -14,17 +14,10 @@ async function search() {
         return;
     }
 
-    const url = 'https://botai.smartdataautomation.com//api_backend_ai/dinamic-db/report/119/Jolifood_PDVs';
+    const url = 'https://jolifood-production.up.railway.app/api/jolifood/pdv'';
 
     try {
-        const response = await fetch(url, {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Token 4e15396f99ae10dd5c195d81fb6a3722c0a44a10',
-                'Content-Type': 'application/json'
-            }
-        });
-
+        const response = await fetch(url);
         if (!response.ok) {
             document.getElementById('results').innerHTML = '<p>Error al obtener los datos.</p>';
             return;
